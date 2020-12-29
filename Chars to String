@@ -1,0 +1,10 @@
+char_1 = input()
+char_2 = input()
+char_3 = input()
+
+string = ""
+string += char_1
+string += char_2
+string += char_3
+
+print(string)
