@@ -1,0 +1,23 @@
+num = int(input())
+
+left = 0
+right = 0
+opening = 0
+
+for i in range(num):
+    n_str = input()
+    if n_str == "(":
+        left += 1
+        opening += 1
+
+    if n_str == ")":
+        right += 1
+        opening = 0
+
+    if opening == 2:
+        break
+
+if left == right:
+    print("BALANCED")
+else:
+    print("UNBALANCED")
